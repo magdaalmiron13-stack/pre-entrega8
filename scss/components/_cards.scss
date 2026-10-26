@@ -39,7 +39,7 @@
     border-radius: v.$radio-borde;
     background-color: v.$color-fondo;
 
-    @include m.flex-column(10px);
+    @include m.flex-column(v.$espaciado-base * 0.5);
 
     min-width: 0;
 

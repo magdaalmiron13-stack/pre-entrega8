@@ -43,13 +43,15 @@
 
     min-width: 0;
 
-    transition: transform 0.3s ease,
-                background-color 0.3s ease;
+    transition: transform 0.3s ease-out,
+            background-color 0.3s ease-out,
+            box-shadow 0.3s ease-out;
 
     &:hover {
-        transform: translateY(-5px);
-        background-color: v.$color-hover-tarjetas;
-    }
+    transform: translateY(-5px);
+    background-color: v.$color-hover-tarjetas;
+    box-shadow: 0 6px 15px rgba(v.$color-principal, 0.2);
+}
 
     &:focus-within {
         outline: 2px solid v.$color-principal;
